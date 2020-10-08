@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('admin-layout.admin-index');
 });
+
+Route::resource('types', 'AdminTypesController')->except([
+    'show'
+]);

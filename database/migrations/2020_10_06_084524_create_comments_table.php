@@ -18,9 +18,8 @@ class CreateCommentsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('tour_id');
             $table->text('content');
-            $table->unsignedBigInteger('parent_id')->default(0);
+            $table->unsignedBigInteger('parent_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('parent_id')->references('id')->on('comments');
             $table->foreign('tour_id')->references('id')->on('tours');
             $table->timestamps();
             $table->softDeletes();

@@ -24,6 +24,22 @@
         'adminTopBarButtonLogOut' => 'Đăng xuất',
         'loginSlogan' => 'Chào mừng đến với website',
         'loginButton' => 'Đăng nhập',
-        'loginWithGoogleButton' => 'Đăng nhập với Google'
+        'loginWithGoogleButton' => 'Đăng nhập với Google',
+        'addMessage' => 'Thêm thành công',
+        'updateMessage' => 'Sửa thành công',
+        'deleteMessage' => 'Xoá thành công',
+        'typeList' => 'Danh sách loại tour',
+        'typeListId' => 'Id',
+        'typeListName' => 'Tên',
+        'typeListParentId' => 'Thể loại cha',
+        'typeListUpdate' => 'Sửa',
+        'typeListDelete' => 'Xoá',
+        'typeAdd' => 'Thêm loại tour mới',
+        'typeAddName' => 'Tên',
+        'typeAddSelect' => 'Là thể loại con của:',
+        'typeAddButton' => 'Thêm',
+        'updateButton' => 'Cập nhật',
+        'deleteButton' => 'Xoá',
+        'notFoundMessage' => 'Không tìm thấy',
     ]
 ?>
