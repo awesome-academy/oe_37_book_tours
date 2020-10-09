@@ -24,6 +24,22 @@
         'adminTopBarButtonLogOut' => 'Log Out',
         'loginSlogan' => 'Welcome to my website',
         'loginButton' => 'Login',
-        'loginWithGoogleButton' => 'Login with Google'
+        'loginWithGoogleButton' => 'Login with Google',
+        'addMessage' => 'Successfully added',
+        'updateMessage' => 'Successfully updated',
+        'deleteMessage' => 'Successfully deleted',
+        'typeList' => 'Tour Type List',
+        'typeListId' => 'Id',
+        'typeListName' => 'Name',
+        'typeListParentId' => 'Parent Id',
+        'typeListUpdate' => 'Update',
+        'typeListDelete' => 'Delete',
+        'typeAdd' => 'Add new tour type',
+        'typeAddName' => 'Name',
+        'typeAddSelect' => 'Parent type:',
+        'typeAddButton' => 'Add',
+        'updateButton' => 'Update',
+        'deleteButton' => 'Delete',
+        'notFoundMessage' => 'Error! Not found',
     ]
 ?>

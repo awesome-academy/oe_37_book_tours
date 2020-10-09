@@ -16,6 +16,10 @@ Route::get('/', function () {
     return view('admin-layout.admin-index');
 });
 
+Route::resource('types', 'AdminTypesController')->except([
+    'show'
+]);
+
 //----------frontend-------------------------------------------
 Route::prefix('booking')->group(function () {
     Route::get('/', 'HomeController@index')->name('home.index');

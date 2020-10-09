@@ -16,8 +16,7 @@ class CreateTypesTable extends Migration
         Schema::create('types', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name')->unique();
-            $table->unsignedBigInteger('parent_id')->default(0);
-            $table->foreign('parent_id')->references('id')->on('types');
+            $table->unsignedBigInteger('parent_id')->nullable();
             $table->softDeletes();
         });
     }
