@@ -20,6 +20,10 @@ Route::resource('types', 'AdminTypesController')->except([
     'show'
 ]);
 
+Route::resource('users', 'AdminUsersController')->except([
+    'show'
+]);
+
 //----------frontend-------------------------------------------
 Route::prefix('booking')->group(function () {
     Route::get('/', 'HomeController@index')->name('home.index');

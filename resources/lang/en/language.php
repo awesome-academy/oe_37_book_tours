@@ -41,5 +41,16 @@
         'updateButton' => 'Update',
         'deleteButton' => 'Delete',
         'notFoundMessage' => 'Error! Not found',
+        'userPage' => 'User List',
+        'userAdd' => 'Add a new user',
+        'columnId' => 'Id',
+        'columnName' => 'Name',
+        'columnEmail' => 'Email',
+        'columnGender' => 'Gender',
+        'columnPhone' => 'Phone',
+        'columnAddress' => 'Address',
+        'columnPassword' => 'Password',
+        'male' => 'Male',
+        'female' => 'Female',
     ]
 ?>

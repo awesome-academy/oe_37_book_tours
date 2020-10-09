@@ -41,5 +41,16 @@
         'updateButton' => 'Cập nhật',
         'deleteButton' => 'Xoá',
         'notFoundMessage' => 'Không tìm thấy',
+        'userPage' => 'Danh sách người dùng',
+        'userAdd' => 'Thêm người dùng mới',
+        'columnId' => 'Id',
+        'columnName' => 'Tên',
+        'columnEmail' => 'Email',
+        'columnGender' => 'Giới tính',
+        'columnPhone' => 'Điện thoại',
+        'columnAddress' => 'Địa chỉ',
+        'columnPassword' => 'Mật khẩu',
+        'male' => 'Nam',
+        'female' => 'Nữ',
     ]
 ?>
