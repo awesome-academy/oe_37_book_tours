@@ -15,3 +15,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('admin-layout.admin-index');
 });
+
+//----------frontend-------------------------------------------
+Route::prefix('booking')->group(function () {
+    Route::get('/', 'HomeController@index')->name('home.index');
+    Route::get('tours', 'HomeController@tours')->name('home.tours');
+});
