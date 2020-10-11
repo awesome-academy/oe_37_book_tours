@@ -52,5 +52,13 @@
         'columnPassword' => 'Mật khẩu',
         'male' => 'Nam',
         'female' => 'Nữ',
+        'columnTypeId' => 'Loại tour',
+        'columnPrice' => 'Giá',
+        'columnDiscount' => 'Giảm giá(%)',
+        'columnDescription' => 'Mô tả',
+        'columnContent' => 'Nội dung',
+        'columnImage' => 'Hình ảnh',
+        'columnSeeMore' => 'Xem thêm',
+        'infoButton' => 'Xem',
     ]
 ?>

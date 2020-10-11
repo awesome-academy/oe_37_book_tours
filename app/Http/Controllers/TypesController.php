@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\TypesRequest;
 use App\Models\Type;
 
-class AdminTypesController extends Controller
+class TypesController extends Controller
 {
     /**
      * Display a listing of the resource.
