@@ -37,7 +37,7 @@
                                 <p class="goToDescription">{{ $tour->description }}</p>
                                 <p class="price">{{ number_format($tour->price) }} VNĐ</p>
                                 <p class="text-center buttons">
-                                    <a href="" class="btn btn-primary">
+                                    <a href="{{ route('checkout.get', $tour->id) }}" class="btn btn-primary">
                                         @lang('langviews.reservations')
                                     </a>
                                 </p>

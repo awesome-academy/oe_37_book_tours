@@ -30,13 +30,13 @@
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <a href="detail.html">
+                                            <a href="{{ route('tour.detail', $tour->id) }}">
                                                 <img src="upload_image/{{ $tour->image }}" alt="" class="img-fluid">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="detail.html" class="invisible">
+                                <a href="{{ route('tour.detail', $tour->id) }}" class="invisible">
                                     <img src="upload_image/{{ $tour->image }}" alt="" class="img-fluid">
                                 </a>
                                 <div class="text">
