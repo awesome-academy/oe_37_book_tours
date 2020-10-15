@@ -52,5 +52,13 @@
         'columnPassword' => 'Password',
         'male' => 'Male',
         'female' => 'Female',
+        'columnTypeId' => 'Type',
+        'columnPrice' => 'Price',
+        'columnDiscount' => 'Discount(%)',
+        'columnDescription' => 'Description',
+        'columnContent' => 'Content',
+        'columnImage' => 'Image',
+        'columnSeeMore' => 'See More',
+        'infoButton' => 'See',
     ]
 ?>

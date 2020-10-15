@@ -16,13 +16,15 @@ Route::get('/', function () {
     return view('admin-layout.admin-index');
 });
 
-Route::resource('types', 'AdminTypesController')->except([
+Route::resource('types', 'TypesController')->except([
     'show'
 ]);
 
-Route::resource('users', 'AdminUsersController')->except([
+Route::resource('users', 'UsersController')->except([
     'show'
 ]);
+
+Route::resource('tours', 'ToursController');
 
 //----------frontend-------------------------------------------
 Route::prefix('booking')->group(function () {

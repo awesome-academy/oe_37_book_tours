@@ -17,12 +17,11 @@
 
   <!-- Custom styles for this template-->
   <link href="{{asset('admin-page/css/sb-admin-2.min.css')}}" rel="stylesheet">
-  <base href={{asset('')}}>
   <script>
     window.onload = function() {
         CKEDITOR.replace( 'editor1' );
     };
-</script>
+  </script>
 </head>
 
 <body id="page-top">
@@ -83,6 +82,6 @@
   <!-- Page level custom scripts -->
   <script src="{{asset('admin-page/js/demo/chart-area-demo.js')}}"></script>
   <script src="{{asset('admin-page/js/demo/chart-pie-demo.js')}}"></script>
-  <script src="{{asset('ckeditor/ckeditor.js') }}"></script>
+  <script src="{{asset('admin-page/ckeditor/ckeditor.js') }}"></script>
 </body>
 </html>

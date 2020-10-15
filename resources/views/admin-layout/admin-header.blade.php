@@ -40,8 +40,8 @@
       <div id="collapseUser" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">{{ trans('language.functioning') }}</h6>
-              <a class="collapse-item" href="">{{ trans('language.userList') }}</a>
-              <a class="collapse-item" href="">{{ trans('language.userAdd') }}</a>
+              <a class="collapse-item" href="{{ route('users.index') }}">{{ trans('language.userList') }}</a>
+              <a class="collapse-item" href="{{ route('users.create') }}">{{ trans('language.userAdd') }}</a>
         </div>
       </div>
     </li>
@@ -55,8 +55,8 @@
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">{{ trans('language.functioning') }}</h6>
-            <a class="collapse-item" href="">{{ trans('language.tourList') }}</a>
-            <a class="collapse-item" href="">{{ trans('language.tourAdd') }}</a>
+            <a class="collapse-item" href="{{ route('tours.index') }}">{{ trans('language.tourList') }}</a>
+            <a class="collapse-item" href="{{ route('tours.create') }}">{{ trans('language.tourAdd') }}</a>
         </div>
       </div>
     </li>

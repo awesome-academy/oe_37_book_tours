@@ -12,6 +12,8 @@ class Tour extends Model
 
     protected $table = 'tours';
 
+    public $timestamps = FALSE;
+
     protected $fillable = [
         'type_id',
         'name',

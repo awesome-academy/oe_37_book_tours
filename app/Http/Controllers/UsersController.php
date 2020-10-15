@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\UsersRequest;
 use App\Models\User;
 
-class AdminUsersController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
