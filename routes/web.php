@@ -36,4 +36,5 @@ Route::prefix('booking')->group(function () {
     Route::post('register', 'UserController@register')->name('register.post');
     Route::get('login', 'UserController@getFormLogin')->name('login.get');
     Route::post('login', 'UserController@login')->name('login.post');
+    Route::get('search/tours', 'HomeController@searchTour')->name('search.tours');
 });

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Type;
 use App\Models\Tour;
 use Config;
+use App\Http\Requests\SearchRequest;
 
 class HomeController extends Controller
 {
@@ -59,5 +60,14 @@ class HomeController extends Controller
         }
 
         return ($this->redirectRoute('errors', ['message' => '']));
+    }
+
+    public function searchTour (SearchRequest $request)
+    {
+        $result = $request->key;
+        $tours = Tour::search($result)
+        ->paginate(Config::get('paginate.tours'));
+
+        return view('book_tour.pages.search', compact('tours', 'result'));
     }
 }

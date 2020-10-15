@@ -28,6 +28,11 @@ class Tour extends Model
        return $query->orderBy('created_at', 'desc');
     }
 
+    public function scopeSearch($query, $result)
+    {
+        return $query->where('name', 'like', '%'.$result.'%')
+            ->orWhere('price', 'like', $result);
+    }
     public function type()
     {
     	return $this->belongsTo(Type::class, 'type_id', 'id');

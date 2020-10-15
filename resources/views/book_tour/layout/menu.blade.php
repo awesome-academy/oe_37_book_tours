@@ -54,11 +54,11 @@
 </nav>
 <div id="search" class="collapse">
     <div class="container">
-        <form role="search" class="ml-auto">
+        <form action="{{ route('search.tours') }}" role="search" method="get" class="ml-auto">
             <div class="input-group">
-                <input type="text" placeholder=" @lang('langviews.search') " class="form-control">
+                <input type="text" name="key" placeholder=" @lang('langviews.search') " class="form-control">
                 <div class="input-group-append">
-                    <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
                 </div>
             </div>
         </form>
