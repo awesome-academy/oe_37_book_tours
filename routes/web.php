@@ -28,4 +28,7 @@ Route::resource('users', 'AdminUsersController')->except([
 Route::prefix('booking')->group(function () {
     Route::get('/', 'HomeController@index')->name('home.index');
     Route::get('tours', 'HomeController@tours')->name('home.tours');
+    Route::get('tours/{id}', 'HomeController@tourDetail')->name('tour.detail');
+    Route::view('errors', 'book_tour.pages.errors')->name('errors');
+    Route::get('categories/{id}/tours', 'HomeController@tourByCategory')->name('tour.category');
 });

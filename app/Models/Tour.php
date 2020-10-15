@@ -12,8 +12,6 @@ class Tour extends Model
 
     protected $table = 'tours';
 
-    public $timestamps = false;
-
     protected $fillable = [
         'type_id',
         'name',
@@ -24,6 +22,11 @@ class Tour extends Model
         'content',
         'image',
     ];
+
+    public function scopeOrderDesc($query)
+    {
+       return $query->orderBy('created_at', 'desc');
+    }
 
     public function type()
     {

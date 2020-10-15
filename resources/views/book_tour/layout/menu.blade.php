@@ -20,31 +20,14 @@
                 <a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link"> @lang('langviews.tours_by_region')
                   <b class="caret"></b>
                 </a>
+               
+
                 <ul class="dropdown-menu megamenu">
                     <li>
-                        <div class="row">
+                        <div class="row flex-row flex-wrap">
 
-                            @foreach($types as $type)
-                                @if($type->parent_id == null)
-                                <div class="col-md-6 col-lg-3">
-                                    <ul class="list-unstyled mb-3">
-                                        <h5>
-                                           {{ $type->name }}
-                                        </h5>
-                                        @foreach($types as $childen)
-                                            @if($childen->parent_id == $type->id)
-                                            <li class="nav-item">
-                                                <a href="category.html" class="nav-link">
-                                                    {{ $childen->name }}
-                                                </a>
-                                            </li>
-                                            @endif
-                                        @endforeach
-                                    </ul>
-                                </div>
-                                @endif
-                            @endforeach
-                            
+                        @include('book_tour/layout/show_types')
+                        
                         </div>
                     </li>
                 </ul>
@@ -81,3 +64,4 @@
         </form>
     </div>
 </div>
+
