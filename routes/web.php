@@ -31,4 +31,9 @@ Route::prefix('booking')->group(function () {
     Route::get('tours/{id}', 'HomeController@tourDetail')->name('tour.detail');
     Route::view('errors', 'book_tour.pages.errors')->name('errors');
     Route::get('categories/{id}/tours', 'HomeController@tourByCategory')->name('tour.category');
+//-------------auth---------------------------------------------
+    Route::get('register', 'UserController@getFormRegister')->name('register.get');
+    Route::post('register', 'UserController@register')->name('register.post');
+    Route::get('login', 'UserController@getFormLogin')->name('login.get');
+    Route::post('login', 'UserController@login')->name('login.post');
 });
