@@ -35,4 +35,9 @@ class TourBooking extends Model
     {
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
+
+    public function scopeAccepted($query)
+    {
+        return $query->where('status', 2);
+    }
 }

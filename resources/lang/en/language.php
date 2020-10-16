@@ -75,5 +75,8 @@
         'acceptButton' => 'Accept booking request',
         'cancelButton' => 'Cancel booking request',
         'loginFailed' => 'Login failed',
+        'revenueAdd' => 'Add new revenue',
+        'columnTotalTour' => 'Total tours',
+        'columnTotalIncome' => 'Total income',
     ]
 ?>
