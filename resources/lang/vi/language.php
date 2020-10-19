@@ -75,5 +75,8 @@
         'acceptButton' => 'Xác nhận yêu cầu đặt tour',
         'cancelButton' => 'Huỷ bỏ yêu cầu đặt tour',
         'loginFailed' => 'Đăng nhập thất bại',
+        'revenueAdd' => 'Thêm báo cáo doanh thu',
+        'columnTotalTour' => 'Tổng số tour',
+        'columnTotalIncome' => 'Tổng doanh thu',
     ]
 ?>

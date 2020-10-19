@@ -35,6 +35,10 @@ Route::group(['middleware' => 'adminLogin'], function () {
     Route::resource('reviews', 'UserReviewsController')->except([
         'create', 'edit', 'store'
     ]);
+
+    Route::resource('revenues', 'RevenuesController')->except([
+        'edit', 'update'
+    ]);
 });
 
 //----------frontend-------------------------------------------
