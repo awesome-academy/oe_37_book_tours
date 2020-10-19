@@ -23,6 +23,7 @@ class TourBooking extends Model
         'contact_name',
         'email',
         'phone',
+        'status',
     ];
 
     public function tour()

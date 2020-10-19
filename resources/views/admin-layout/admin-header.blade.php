@@ -70,7 +70,7 @@
       <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">{{ trans('language.functioning') }}</h6>
-          <a class="collapse-item" href="">{{ trans('language.bookingRequestList') }}</a>
+          <a class="collapse-item" href="{{ route('bookings.index') }}">{{ trans('language.bookingRequestList') }}</a>
         </div>
       </div>
     </li>
@@ -84,7 +84,7 @@
       <div id="collapseOrder" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">{{ trans('language.functioning') }}</h6>
-          <a class="collapse-item" href="">{{ trans('language.userReviewList') }}</a>
+          <a class="collapse-item" href="{{ route('reviews.index') }}">{{ trans('language.userReviewList') }}</a>
         </div>
       </div>
     </li>

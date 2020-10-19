@@ -12,19 +12,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin-layout.admin-index');
+Route::get('/login', 'LoginController@getLogin')->name('getAdminLogin');
+Route::post('/login', 'LoginController@postLogin')->name('postAdminLogin');
+Route::get('/logout', 'LoginController@getLogOut')->name('getAdminLogOut');
+
+Route::group(['middleware' => 'adminLogin'], function () {
+    Route::get('/', 'LoginController@getAdminIndex')->name('getAdminIndex');
+    Route::resource('types', 'TypesController')->except([
+        'show'
+    ]);
+
+    Route::resource('users', 'UsersController')->except([
+        'show'
+    ]);
+
+    Route::resource('tours', 'ToursController');
+
+    Route::resource('bookings', 'BookingsController')->except([
+        'create', 'edit', 'store'
+    ]);
+
+    Route::resource('reviews', 'UserReviewsController')->except([
+        'create', 'edit', 'store'
+    ]);
 });
-
-Route::resource('types', 'TypesController')->except([
-    'show'
-]);
-
-Route::resource('users', 'UsersController')->except([
-    'show'
-]);
-
-Route::resource('tours', 'ToursController');
 
 //----------frontend-------------------------------------------
 Route::prefix('booking')->group(function () {
