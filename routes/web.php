@@ -50,4 +50,9 @@ Route::prefix('booking')->group(function () {
     Route::get('login', 'UserController@getFormLogin')->name('login.get');
     Route::post('login', 'UserController@login')->name('login.post');
     Route::get('search/tours', 'HomeController@searchTour')->name('search.tours');
+//-----------checkout-------------------------------------------
+    Route::get('checkout/{id}/tour', 'BookingTourController@getFormCheckout')->name('checkout.get');
+    Route::post('checkout/{id}/tour', 'BookingTourController@checkout')->name('checkout.post');
+    Route::get('districts/{id}', 'AddressController@getDistricts');
+    Route::get('wards/{id}', 'AddressController@getWards');
 });
